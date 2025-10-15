@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Tour of Nashik</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <h2>🌇 Nashik Virtual Tour</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#places">Places</a></li>
+      <li><a href="#food">Food</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <video id="bgVideo" autoplay muted loop playsinline class="bg-video">
+      <source src="videos/nashik.mp4" type="video/mp4" />
+    </video>
+
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Welcome to Nashik</h1>
+      <p>Take a virtual journey through the City of Grapes 🍇</p>
+      <button onclick="scrollToSection('places')">Start Exploring</button>
+    </div>
+  </section>
+
+  <!-- Places Section -->
+  <section id="places">
+    <h2 data-aos="fade-right">✨ Must-Visit Places in Nashik</h2>
+    <div class="place-grid">
+      <!-- Existing Places -->
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Sula Vineyards')">
+        <img src="images/sula.jpg" alt="Sula Vineyards" />
+        <h3>Sula Vineyards</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Trimbakeshwar Temple')">
+        <img src="images/trimbak.jpg" alt="Trimbakeshwar Temple" />
+        <h3>Trimbakeshwar Temple</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Pandav Leni Caves')">
+        <img src="images/pandavleni.jpg" alt="Pandav Leni Caves" />
+        <h3>Pandav Leni Caves</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Godavari Ghat')">
+        <img src="images/ganga.jpg" alt="Godavari Ghat" />
+        <h3>Godavari Ghat</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Anjaneri Hills')">
+        <img src="images/anjaneri.jpg" alt="Anjaneri Hills" />
+        <h3>Anjaneri Hills</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Sita Gufa')">
+        <img src="images/sitagufa.jpg" alt="Sita Gufa" />
+        <h3>Sita Gufa</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Kalaram Mandir')">
+        <img src="images/KalaramMandir.jpg" alt="Kalaram Mandir" />
+        <h3>Kalaram Mandir</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Navsha Ganpati')">
+        <img src="images/navshaganpati.jpg" alt="Navsha Ganpati" />
+        <h3>Navsha Ganpati</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Kapaleshwar Mandir')">
+        <img src="images/kapaleshwarmandir.jpg" alt="Kapaleshwar Mandir" />
+        <h3>Kapaleshwar Mandir</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Muktidham Temple')">
+        <img src="images/muktidham.jpg" alt="Muktidham Temple" />
+        <h3>Muktidham Temple</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Someshwar Waterfall')">
+        <img src="images/someshwar.jpg" alt="Someshwar Waterfall" />
+        <h3>Someshwar Waterfall</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Coin Museum')">
+        <img src="images/coinmuseum.jpg" alt="Coin Museum" />
+        <h3>Coin Museum</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Gangapur Dam')">
+        <img src="images/gangapurdam.jpg" alt="Gangapur Dam" />
+        <h3>Gangapur Dam</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Harihar Fort')">
+        <img src="images/hariharfort.jpg" alt="Harihar Fort" />
+        <h3>Harihar Fort</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Dugarwadi Waterfall')">
+        <img src="images/dugarwadi.jpg" alt="Dugarwadi Waterfall" />
+        <h3>Dugarwadi Waterfall</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food Section -->
+  <section id="food">
+    <h2 data-aos="fade-right">🍴 Best Food Places in Nashik</h2>
+    <div class="place-grid">
+      <!-- Existing Food Places -->
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Ambika Misal')">
+        <img src="images/ambika.jpg" alt="Ambika Misal Pav" />
+        <h3>Ambika Misal</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Budha Halwai')">
+        <img src="images/budha halwai.jpg" alt="Budha Halwai" />
+        <h3>Budha Halwai</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Krushna Vadapav')">
+        <img src="images/krushna vadapav.jpg" alt="Krushna Vadapav" />
+        <h3>Krushna Vadapav</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Peruchi Wadi')">
+        <img src="images/peruchi wadi.jpg" alt="Peruchi Wadi" />
+        <h3>Peruchi Wadi</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Sadhna Misal')">
+        <img src="images/sadhna.jpg" alt="Sadhna Misal" />
+        <h3>Sadhna Misal</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Hotel Panchavati Gaurav')">
+        <img src="images/panchavatigaurav.jpg" alt="Hotel Panchavati Gaurav" />
+        <h3>Hotel Panchavati Gaurav</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Thali House Nashik')">
+        <img src="images/thalihouse.jpg" alt="Thali House" />
+        <h3>Thali House</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Sayantara Thali')">
+        <img src="images/sayantara.jpg" alt="Sayantara Thali" />
+        <h3>Sayantara Thali</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Cafe Bliss')">
+        <img src="images/cafebliss.jpg" alt="Cafe Bliss" />
+        <h3>Cafe Bliss</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Tandoor Restaurant')">
+        <img src="images/tandoor.jpg" alt="Tandoor Restaurant" />
+        <h3>Tandoor Restaurant</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Little Italy Nashik')">
+        <img src="images/littleitaly.jpg" alt="Little Italy" />
+        <h3>Little Italy Nashik</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Barbeque Ville')">
+        <img src="images/barbequeville.jpg" alt="Barbeque Ville" />
+        <h3>Barbeque Ville</h3>
+      </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Cafe88')">
+        <img src="images/cafe88.jpg" alt="Cafe 88" />
+        <h3>Cafe 88</h3>
+    </div>
+      <div class="place-card" data-aos="zoom-in" onclick="showDetails('Cafe Dmroa')">
+        <img src="images/cafedmroa.jpg" alt="Cafe Dmroa" />
+        <h3>Cafe Dmroa</h3>
+    </div>
+     <div class="place-card" data-aos="zoom-in" onclick="showDetails('Tales and Sperits')">
+        <img src="images/talessperits.jpg" alt="Cafe Dmroa" />
+        <h3>Tales and Sperits</h3>
+    </div>
+      
+  </section>
+
+  <!-- Details Section -->
+  <section id="details-section">
+    <div id="details"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About This Project</h2>
+    <p>
+      This virtual tour of Nashik is designed by <strong>Athashree Krushna Wagh</strong> 💻  
+      It highlights Nashik’s culture, history, and natural beauty in a modern web experience.
+    </p>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Athashree | © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
