@@ -174,4 +174,3 @@ function showDetails(place) {
     details.innerHTML = "<p>Details not found!</p>";
   }
 }
-
