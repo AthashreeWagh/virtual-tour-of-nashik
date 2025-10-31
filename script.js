@@ -172,10 +172,7 @@ function showDetails(place) {
     details.scrollIntoView({ behavior: "smooth" });
   } else {
     details.innerHTML = "<p>Details not found!</p>";
-  }
-<<<<<<< HEAD
-}
-=======
+  };
 };
 
->>>>>>> old-version
+

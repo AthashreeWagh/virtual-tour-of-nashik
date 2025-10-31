@@ -253,10 +253,6 @@ footer {
     padding: 10px 24px;
   }
 
-<<<<<<< HEAD
-  #places, #food {
-    padding: 100px 25px 60px;
-=======
   .place-card {
     max-width: 220px;
     height: 300px;
@@ -487,7 +483,6 @@ footer {
   nav {
     flex-direction: column;
     gap: 10px;
->>>>>>> old-version
   }
 
   /* 🟢 Keep cards side-by-side where possible */
